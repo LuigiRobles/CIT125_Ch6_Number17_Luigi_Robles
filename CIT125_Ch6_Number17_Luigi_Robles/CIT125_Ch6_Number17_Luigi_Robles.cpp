@@ -4,7 +4,7 @@
 // 6-29-2020 Summer Term
 
 #include <iostream> // preprocessing directive
-#include <iomanip>
+#include <iomanip> // 
 using namespace std;
 
 int main()
@@ -19,10 +19,15 @@ int main()
 		<< "Canadian Dollar = 1 ,Euro = 2,Indian Rupee = 3," << endl
 		<< "Japanese Yen = 4,Mexican Peso = 5, South African Rand = 6 or British Pound = 7 " << endl;
 	cin >> currencyType;
-	cout << "Please enter the amount of curreny to exchange: ";
+	
+    //input for currency Amount, must be positive integer
+    cout << "Please enter the amount of curreny to exchange: ";
 	cin >> currencyAmount;
-
-	switch (currencyType)
+    //checking if currencyAmount is positive value
+    if (currencyAmount < 0)
+        cout << "Exchange amount must be a positive value, Please enter a different amount.";
+    else
+	    switch (currencyType)
 	{
 	case 1:
 		exchangedAmount = currencyAmount / .73014;
@@ -58,13 +63,6 @@ int main()
 		exchangedAmount = currencyAmount / 0.05768775;
 		cout << fixed << setprecision(2);
 		cout << "Your Exchanged amount is: " << exchangedAmount << " GBP";
-			break;
-
-
-	}
-	return 0;
-}	//end of main function
-
-
-
-
+			break;       
+    } //end switch
+}    
