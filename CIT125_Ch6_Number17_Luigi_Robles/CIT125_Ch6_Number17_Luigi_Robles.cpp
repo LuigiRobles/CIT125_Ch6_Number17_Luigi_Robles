@@ -25,15 +25,42 @@ int main()
 	switch (currencyType)
 	{
 	case 1:
-		exchangedAmount = currencyAmount / .7299;
+		exchangedAmount = currencyAmount / .73014;
 		cout << fixed << setprecision(2);
 		cout << "Your Exchanged amount is: " << exchangedAmount << " CAD";
 		break;
 	case 2:
-		exchangedAmount = currencyAmount / 1.1219;
+		exchangedAmount = currencyAmount / 1.1205059;
 		cout << fixed << setprecision(2);
 		cout << "Your Exchanged amount is: " << exchangedAmount << " EUR";
 		break;
+	case 3:
+		exchangedAmount = currencyAmount / 0.013230243;
+		cout << fixed << setprecision(2);
+		cout << "Your Exchanged amount is: " << exchangedAmount << " INR";
+		break;
+	case 4:
+		exchangedAmount = currencyAmount / 0.0092779;
+		cout << fixed << setprecision(2);
+		cout << "Your Exchanged amount is: " << exchangedAmount << " JPY";
+		break;
+	case 5:
+		exchangedAmount = currencyAmount / 0.04314454;
+		cout << fixed << setprecision(2);
+		cout << "Your Exchanged amount is: " << exchangedAmount << "MXN";
+		break;
+	case 6:
+		exchangedAmount = currencyAmount / 0.05764486153;
+		cout << fixed << setprecision(2);
+		cout << "Your Exchanged amount is: " << exchangedAmount << " ZAR";
+			break;
+	case 7:
+		exchangedAmount = currencyAmount / 0.05768775;
+		cout << fixed << setprecision(2);
+		cout << "Your Exchanged amount is: " << exchangedAmount << " GBP";
+			break;
+
+
 	}
 	return 0;
 }	//end of main function
